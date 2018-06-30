@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+ video{
+    position: relative;
+    width: 100%;
+    top: -19px;
+    z-index: -1;
+}
+body{
+    position: relative;
+    top: 0;
+}
+
+.titulo{
+    position: relative;
+    z-index: 1;
+    top: -125px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #5292FF;
+}
+
+nav{
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin: 0 auto;
+    background-color: #5292FF;
+    width: auto;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    
+}
+nav ul li a{
+    top: 0;
+    left: 0;
+    padding: 30px 50px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    background-color: #5292FF;
+    border-bottom: solid transparent 2px;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    transition-property: background-color,border-bottom;
+}
+nav ul li a:hover,.act{
+    background-color:  #AFDB87;
+    border-bottom: solid black 2px;
+    
+}  
+nav ul li:nth-child(1) {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+nav ul li:nth-child(1) img{
+    margin-top: 5px;
+    margin-left: -15px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+section{
+    position: relative;
+    margin-top: -120px;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.im{
+    top: 50px;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5%;
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 340px;
+}
+.im>div{
+    border-radius: 1%;
+    transition-delay: .3s;
+    transition-duration: 1s;
+    transform: perspective(600px);
+    transform-origin: 100% 10%;
+    transform-style: preserve-3d;
+    width: 220px;
+    height: 340px;
+}
+.im>div>img{
+    border-radius: 2%;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.im>div>div{
+    border-radius: 1%;
+    width: 220px;
+    height: 340px;
+    background-color: #5292FF ;
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+.im:hover>div{
+    transform: perspective(600px) rotateY(180deg) translateX(100%);
+}
+.im>div>div>h3{
+    text-align: center;
+    margin-top: 8px;
+    font-size: 17px;
+    
+    
+}
+.im>div>div>h4{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.im>div>div>h5{
+    margin-left: 15px;
+
+}
+.im>div>div>p{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 5px 15px 0px 15px;
+    text-align: justify;
+    font-size: 13px;
+}
+.im>div>div>a{
+    position: absolute;
+    background-color: #AFDB87;
+    border-radius: 10%;
+    width:65px;
+    height: 15px;
+    font-size: 13px;
+    text-align: center;
+    bottom: 8px;
+    left: 80px;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+footer{
+    position: relative;
+    background-color: #85929E ;
+    width: 100%;
+    height: 200px;
+    top: 80px;
+    left: 0;
+    right: 0;
+}
+ footer h1{
+     position: relative;
+     top: 30px;
+     left: auto;
+     right: auto;
+     font-weight: bold;
+     color: white;
+     font-size: 25px;
+     text-align: center;
+ }
+footer img:nth-child(2){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 100px;
+    left: 892px;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer img:nth-child(3){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 100px;
+    left: 785px;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+footer img:nth-child(4){
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 100px;
+    left: 1000px;
+    cursor: pointer;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer img:nth-child(5){
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 90px;
+    left: 30px;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer h2{
+    position: absolute;
+    top: 95px;
+    left: 95px;
+    color: white;
+    font-size: 20px;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer h2:hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+footer img:nth-child(7){
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 150px;
+    left: 30px;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer h2:nth-child(8){
+    position: absolute;
+    top: 145px;
+    left: 95px;
+    color: white;
+    font-size: 20px;
+    transition-delay: 0s;
+    transition-duration: .5s;
+    transition-property: all;
+}
+footer h2:nth-child(8):hover{
+    color: black;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+footer img:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+.imgAvatar{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 700px;
+}
+.TituloAvatar{
+    position: relative;
+    z-index: 1;
+    top: -20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #477CE5;
+    font-weight: normal;
+    color: black;
+    font-size: 45px;
+}
+.sectAvatar{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    margin: 0 auto;
+    height: 550px;
+}
+
+.caratula{
+    position: absolute;
+    top: 50px;
+    left: 8%;
+    width: 280px;
+    height: 400px;
+    
+}
+.sectAvatar div{
+    position: absolute;
+    top: 50px;
+    left: 32%;
+    right: 10%;
+    display: inline-block;
+
+}
+
+
+
+.sectAvatar div h4{
+    font-weight: bold;
+    font-size: 20px;
+}
+.sectAvatar div h5{
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 90px;
+    margin-top: -25px;
+    animation-duration: 2s;
+    animation-name: Titulos;
+}
+@keyframes Titulos{
+    from{
+        margin-left: 300px;
+    }
+    to{
+        margin-left: 90px;
+    }
+}
+
+.sectAvatar div h3{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 220px;
+}
+.sectAvatar div p{
+    margin-top: 0px;
+    opacity: 1;
+    font-size: 18px;
+    font-weight: normal;
+    animation-duration: 2s;
+    animation-name: parrafo;
+}
+@keyframes parrafo{
+    from{    
+    opacity: 0;
+    margin-top: 200px;
+    }
+    to{
+    opacity: 1;
+    margin-top: 0;
+    }
+}
+.videoPeli{
+    z-index: 2;
+    position: relative;
+    top: 50px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 700px;
+    bottom: 50px;
+    margin: auto;
+}
+.trailer{
+    top: 0;
+    text-align: center;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+
+}
